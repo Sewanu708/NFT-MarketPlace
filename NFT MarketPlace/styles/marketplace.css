@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Work Sans", sans-serif;
+}
+
+.artist-page{
+    width: 100%;
+    height: auto;
+}
+
+.profile{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 115px;
+    background-color: #2B2B2B;
+    row-gap: 30px;
+}
+.profile-bio{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    row-gap: 10px;
+}
+
+.bio{
+    font-size: 51px;
+    color: #fff;
+    font-weight: 600;
+}
+.bio-text{
+    font-size: 22px;
+    color: #fff;
+}
+
+
+.search-bar{
+    width: 100%;
+    height: auto;
+    border: 0.5px solid #858584;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-bar input{
+    width: 90%;
+    height: auto;
+    border: none;
+    outline: none;
+    background:none;
+    color: #fff;
+}
+
+.search-bar label{
+    width: 24px;
+    height: 24px;
+}
+
+
+.search-bar label:hover{
+    cursor: pointer;
+}
+
+.nfts-card-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 115px;
+    background-color: #2B2B2B;
+}
+
+.nfts-card-header{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.created,.owned,.collection{
+    padding: 15px 99px;
+    height: auto;
+    display: flex;
+    column-gap: 16px;
+    color: #fff;
+    align-items: center;
+    cursor: pointer;
+}
+
+.figures,.figure{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #858584;
+}
+
+.figure{
+    background-color: #3B3B3B;
+
+}
+
+.created{
+    border-bottom: 1.5px solid #858584;
+}
+
+.nfts-cards{
+    width: 100%;
+    padding: 80px 115px 80px 115px;
+    background-color: #3B3B3B;
+    border-bottom: 1.5px solid #2B2B2B;
+}
+
+.nft-card-collection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: start;
+    justify-items: start;
+    row-gap: 30px;
+    column-gap: 30px;
+  
+}
+
+.nft-card{
+    width: 100%;
+    height: 469px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    
+}
+
+.nft-image{
+    width: 100%;
+    height: 296px;
+}
+
+.nft-image img{
+    width: 100%;
+    height: 100%;
+}
+.nft-info{
+    width: 100%;
+    height: 173px;
+    padding: 20px 30px 25px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+.card-name-edit{
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+}
+
+.nft-price-bid{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+
+.nft-price,.nft-bid{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    row-gap: 8px;
+    color: #fff;
+}
+
+.price-edit{
+    font-size: 12px;
+    color: #858584;
+    font-family: "Space Mono", monospace;
+}
+
+.nft-card{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.nft-card:hover{
+    transform: scale(0.95);
+}
+
+.artist-card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    row-gap: 10px;
+}
+
+.card-title{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-image-name{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 10px;
+}
+
+.card-image{
+    width: 24px;
+    height: 24px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-name{
+    color: #fff;
+}
+
+
+@media screen and (max-width:1200px) {
+    .nfts-cards{
+        width: 100%;
+        padding: 80px 72px 80px 72px;
+    }
+
+    .nfts-card-section{
+        padding: 0px 72px;
+    }
+    .profile{
+        padding: 40px 72px;
+    }
+    .created,.owned,.collection{
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .profile-name-buttons{
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .nft-card-collection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .values{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    
+    .s-field{
+        font-size: 16px;
+    }
+
+    .bio{
+        font-size: 38px;
+    }
+
+    .bio-text{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:750px) {
+    .profile-name-buttons{
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .nft-card-collection{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .profile-stat{
+        width: 80%;
+    }
+
+    .created,.owned,.collection{
+        padding: 15px 30px;
+    }
+    .figure,.figures{
+        display: none;
+    }
+    .price-edit2{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .profile-name-buttons{
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .nft-card-collection{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .price-edit2{
+        font-size: 14px;
+    }
+    .profile-image{
+        left: 35%;
+    }
+
+    
+    
+}
+
+@media screen and (max-width:450px) {
+    .nfts-cards{
+        width: 100%;
+        padding: 80px 30px 80px 30px;
+    }
+    .nfts-card-section{
+        padding: 0px 30px;
+    }
+    .profile{
+        padding: 40px 30px;
+    }
+    .profile-stat{
+        width: 100%;
+    }
+    .created,.owned,.collection{
+        padding: 15px 10px;
+    }
+    .profile-name{
+        font-size:22px;
+    }
+    .follow-wallet-button{
+        width: 100%;
+        flex-direction: column;
+    }
+    .follow-button button,.copy-address button{
+      width: 100%;
+    }
+
+    .follow-button,.copy-address{
+        width: 100%;
+    }
+    .bio{
+        font-size: 28px;
+    }
+    
+    
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+
+    <link rel="stylesheet" href="./styles/create-account.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="nav-bar">
+        <a href="index.html" class="nav-logo">
+            <div class="logo">
+                <img src="./images/icons/Storefront.svg" alt="">
+            </div>
+            <div class="logo-name">
+                NFT Marketplace
+            </div>
+        </a>
+
+        <div class="nav-menu">
+            <ul class="nav-menu-list">
+                <li>
+                   <a href="marketplace.html"> Marketplace</a>
+                </li>
+                <li>
+                    <a href="rankings.html"> Rankings</a>
+                 </li>
+                 <li>
+                    <a href="connect-wallet.html"> Connect a wallet</a>
+                 </li>
+                 <button>
+                    <a href="create-account.html"> 
+                        <div class="user">
+                            <img src="./images/icons/User.svg" alt="">
+                        </div>
+
+                        <div>
+                            Sign up
+                        </div>
+                    </a>
+                 </button>
+            </ul>
+
+            <div class="hamburger">
+                <img src="./images/icons/List.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="create-account">
+        <div class="create-account-image">
+            <img src="./images/Image Placeholder.png" alt="">
+        </div>
+
+        <div class="create-account-form">
+            <div class="form-header">
+                Create Account
+            </div>
+
+            <div class="form-text">
+                Welcome! enter your details and start creating, collecting and selling NFTs.
+            </div>
+
+            <form >
+                <div class="form-item">
+                  <label for="username"><img src="./images/icons/User-grey.svg" alt=""></label>
+                  <input type="text" name="username" id="username" placeholder="Username" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="e-mail"><img src="./images/icons/EnvelopeSimple.svg" alt=""></label>
+                    <input type="email" name="email" id="e-mail" placeholder="Email Address" required>
+                  </div>
+
+                  <div>
+                    <div class="js-passwords js-password">
+                        <label for="password"><img src="./images/icons/LockKey.svg" alt=""></label>
+                        <input type="password" name="password" id="password" placeholder="Password" class="password" required>
+                        <i class="fa-regular fa-eye" id="js-eye"></i>
+                      </div>
+                      <p class="js-password-error" style="font-size: 12px; color: red; margin:5px 0 0 10px;"></p>
+                  </div>
+                  <div>
+                    <div class="js-passwords js-confirm-password">
+                        <label for="passcode"><img src="./images/icons/LockKey.svg" alt=""></label>
+                        <input type="password" name="" id="passcode" placeholder="Confirm Password" class="password" required>
+                        <i class="fa-regular fa-eye" id="js-eye"></i>
+                      </div>
+                      <p class="js-confirm-password-error" style="font-size: 12px; color: red; margin:5px 0 0 10px;">Password doesn't match</p>
+                  </div>
+                  
+
+
+                   
+                    <button type="submit" class="create-account-button js-confirm-password-button">Create Account</button>
+                  
+            </form>
+
+            
+        </div>
+    </section>
+
+    <section class="footer">    
+        <div class="footer-info">
+            <div class="marketplace-info">
+                <div class="nav-logo">
+                    <div class="logo">
+                        <img src="./images/icons/Storefront.svg" alt="">
+                    </div>
+                    <div class="logo-name">
+                        NFT Marketplace
+                    </div>
+                </div>
+    
+                <div class="additional-info">
+                    NFT marketplace UI created with Anima for Figma.
+                </div>
+    
+                <div class="social-media">
+                    <div>Join our community</div>
+                    <div class="socials">
+                        <a href="#"><img src="./images/icons/YoutubeLogo.svg" alt=""></a>
+                        <a href="#"><img src="./images/icons/DiscordLogo.svg" alt=""></a>
+                        <a href="#"><img src="./images/icons/InstagramLogo.svg" alt=""></a>
+                        <a href="#"><img src="./images/icons/TwitterLogo.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="explore">
+                <div class="explore-head">Explore</div>
+                <div class="pages">
+                    <a href="marketplace.html">Marketplace</a>
+                    <a href="rankings.html">Rankings</a>
+                    <a href="connect-wallet.html">Connect a wallet</a>
+                </div>
+            </div>
+    
+            <div class="subscribe">
+                <div class="subscribe-head">Join Our Weekly Digest</div>
+                <div class="subscribe-info">
+                    Get exclusive promotions & updates straight to your inbox.
+                </div>
+                <div class="subscribe-form">
+                    <div class="subscribe-input">
+                         <input type="email" name="" id="" placeholder="Enter our email here">
+                    </div>
+                    <div class="subscribe-button">
+                        <button>
+                            <img class="mail" src="./images/icons/EnvelopeSimpleWhite.svg" alt="">
+                            <p>Subscribe</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-additional-info">
+            Ⓒ NFT Market. Use this template freely.
+        </div>
+    </section>
+ 
+    <script type="module" src="./scripts/Login Signup validation.js"></script>
+</body>
+</html>

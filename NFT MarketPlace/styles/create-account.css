@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", sans-serif;
+}
+
+.create-account{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    column-gap: 60px;
+    background-color: #2B2B2B;
+}
+
+.create-account-image{
+    width: 610px;
+    height: 690px;
+}
+
+.create-account-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.create-account-form{
+    width: 610px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+.form-header{
+    width: 460px;
+    font-size: 51px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-text{
+    width: 460px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+form{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+    row-gap: 15px;
+}
+
+
+.form-item{
+    width: 330px;
+    height: 46px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    column-gap: 12px;
+    padding: 13px 20px;
+}
+.js-passwords{
+    width: 330px;
+    height: 46px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    column-gap: 12px;
+    padding: 13px 20px;
+}
+
+input{
+    outline: none;
+    width: 100%;
+    border: none;
+    color: #2B2B2B;
+    font-size: 16px;
+}
+
+.create-account-button{
+    margin-top: 15px;
+    background-color: #A259FF;
+    color: #fff;
+    padding: 12px 102px;
+    width: 330px;
+    height: 46px;
+    border-radius: 20px;
+    outline:none;
+    border: none;
+    transition: transform 0.5s ease;
+    margin-bottom: 40px;
+ 
+}
+
+button,i{
+    cursor: pointer;
+}
+
+.js-match,.js-confirm-password-error,.js-password-error{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .create-account-form,.create-account-image{
+        width: 397px;
+    }
+
+    
+}
+
+@media screen and (max-width:940px) {
+    .form-header{
+        width: fit-content;
+        font-size: 42px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .form-text{
+        width: 260px;
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (max-width:850px) {
+    
+    .create-account{
+        flex-direction: column;
+    }
+
+    .create-account-image{
+        width: 100%;
+        
+    }
+
+    .create-account-form{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-header{
+        width: fit-content;
+        font-size: 51px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .form-text{
+        width: 50%;
+        font-size: 22px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .form-header{
+        width: fit-content;
+        font-size: 42px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .form-text{
+        width: 260px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .create-account-image{
+        width: 100%;
+        height: 445px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .create-account-form{
+        width: 100%;
+        justify-items: center;
+        padding:0 30px;
+    }
+    .form-header{
+        width: 100%;
+        font-size: 38px;
+    }
+    
+    .form-text{
+        width: 100%;
+        font-size: 16px;
+    }
+    .create-account-image{
+        width: 100%;
+        height: 232px;
+    }
+    form{
+        width: 100%;
+    }
+    form div,.create-account-button{
+        width: 100%;
+    }
+    .create-account-button{
+        padding: 12px 80px;
+    }
+}
